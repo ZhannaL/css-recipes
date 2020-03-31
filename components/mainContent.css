@@ -1,10 +1,6 @@
 .pageContent {
-  position: absolute;
-  top:0;
-  bottom:0;
   padding: var(--space-xs) var(--space-xl);
   width: calc(100% - var(--asideWidth));
-  background: var(--backgroundColor);
 }
 
 .wrapper {
