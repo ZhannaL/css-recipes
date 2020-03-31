@@ -1,6 +1,10 @@
 .pageContent {
+  position: absolute;
+  top:0;
+  bottom:0;
   padding: var(--space-xs) var(--space-xl);
   width: calc(100% - var(--asideWidth));
+  background: var(--backgroundColor);
 }
 
 .wrapper {
@@ -11,9 +15,14 @@
 .figureBlock {
   margin: auto;
   display: inline-block;
-  padding: var(--space-xs) var(--space-xxl);
+  padding: var(--space-l) var(--space-xxl);
   text-align: center;
   color: var(--textColor);
+  transition: all ease .5s;
+}
+
+.figureBlock:hover {
+  transform: scale(1.1);
 }
 
 .exampleImage {
