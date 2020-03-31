@@ -4,6 +4,10 @@
 @import 'typography.css';
 @import 'components/index.css';
 
+* {
+  transition: background-color .5s;
+}
+
 body {
   --footerHeight: 100px;
   --headerHeight: 220px;
@@ -15,6 +19,7 @@ body {
 
 .page {
   min-height: calc(100vh - (var(--footerHeight) + var(--headerHeight)));
+  position: relative;
 }
 
 .page > * {
@@ -39,17 +44,9 @@ body {
   --themeSwitcherText: 'turn on dark theme';
 }
 
-.pageWrapper {
-  background: var(--backgroundColor);
-}
-
-.pageWrapper * {
-  transition: background-color .5s;
-}
-
 .label::after {
   position: absolute;
-  right: 10px;
+  right: 30px;
   bottom: 5px;
   content: var(--themeSwitcherText);
   cursor: pointer;

@@ -1,2 +1,1 @@
-# zhannet1814-gmail.com
-css-recipes
+https://zhannal.github.io/css-recipes/index.html
