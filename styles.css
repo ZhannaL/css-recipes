@@ -17,6 +17,10 @@ body {
   color: #222;
 }
 
+.pageWrapper {
+  background: var(--backgroundColor);
+}
+
 .page {
   min-height: calc(100vh - (var(--footerHeight) + var(--headerHeight)));
   position: relative;
