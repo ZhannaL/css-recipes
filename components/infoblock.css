@@ -1,0 +1,42 @@
+.infoblock {
+  --infoblock-icon-size: var(--space-m);
+  --infoblockIconColor: var(--colorsrc1);
+  margin: auto;
+  color: var(--infoblock);
+}
+
+.infoblock li:hover {
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+.infoblock a {
+  transition: all .5s;
+}
+
+.infoblock a:hover {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.infoblock li > i {
+  width: var(--infoblock-icon-size);
+  height: var(--infoblock-icon-size);
+}
+
+.infoblock li > span {
+  padding-left: var(--space-xs);
+}
+
+.infoblock li {
+  padding: var(--space-xs) 0;
+}
+
+.infoblock li > i {
+  color: var(--infoblockIconColor);
+}
+
+#themeSwitcher:checked ~ .pageWrapper .infoblock {
+  --infoblockIconColor: var(--infoblock);
+}

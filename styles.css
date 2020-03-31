@@ -1,0 +1,67 @@
+@import 'reset.css';
+@import 'colors.css';
+@import 'spacing.css';
+@import 'typography.css';
+@import 'components/index.css';
+
+body {
+  --footerHeight: 100px;
+  --headerHeight: 220px;
+  --asideWidth: 420px;
+
+  font-family: 'Fira code';
+  color: #222;
+}
+
+.page {
+  min-height: calc(100vh - (var(--footerHeight) + var(--headerHeight)));
+}
+
+.page > * {
+  display: inline-block;
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* light mode */
+#themeSwitcher:checked ~ .pageWrapper {
+  --mainColor:  #1061f7;
+  --textColor: #2e2e31;
+  --backgroundColor: #f7f5f0;
+  --gray: #4d4c4c;
+  --asideBackground: #eff2ff;
+  --asideLight: rgba(194, 190, 255, 0.3);
+  --footerBackground: rgba(235, 234, 234, 0.9);
+  --infoblock: #dfdfdf;
+  --themeSwitcherText: 'turn on dark theme';
+}
+
+.pageWrapper {
+  background: var(--backgroundColor);
+}
+
+.pageWrapper * {
+  transition: background-color .5s;
+}
+
+.label::after {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  content: var(--themeSwitcherText);
+  cursor: pointer;
+  animation: theme 2s ease infinite;
+}
+
+input {
+  display:none;
+}
+
+@keyframes theme {
+  0%   {transform: scale(1);}
+  50%  {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}

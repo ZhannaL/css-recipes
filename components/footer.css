@@ -1,0 +1,42 @@
+.mainFooter {
+  background-color: var(--footerBackground);
+  color: var( --textColor);
+  text-align: center;
+  width: 100%;
+  min-height: var(--footerHeight);
+  padding: var(--space-m);
+}
+
+.mainFooter > * {
+  vertical-align: middle;
+}
+
+.mainFooter .copyright {
+  font-size: .75em;
+}
+
+.mainFooter ul li {
+  display: inline-block;
+  padding: 0 var(--space-s);
+}
+
+a.social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .7;
+  transition: all .25s;
+}
+a.twitter {
+  background-image: url(../images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+a.github {
+  background-image: url(../images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}

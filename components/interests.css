@@ -1,0 +1,38 @@
+.interests {
+  padding-top: var(--space-xs);
+}
+
+.interest {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding-right: var(--space-xs);
+}
+
+.interest i{
+  font-size: var(--font-size-l);
+  transition: ease .5s;
+}
+
+.interest i:hover{
+  transform: scale(1.2);
+}
+
+.articleIcon i {
+  background-color: var(--mainColor);
+  display: inline-block;
+  border-radius: 50%;
+  padding: var(--space-xs);
+  border: var(--interestIcon);
+  color: white;
+}
+
+#themeSwitcher:checked ~ .pageWrapper .articleIcon i {
+  --interestIcon: var(--mainColor) solid 5px;
+  background-color: white;
+  color: var(--mainColor);
+}
+
+.articleHead > * {
+  display: inline-block;
+}

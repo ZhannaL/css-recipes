@@ -1,0 +1,31 @@
+.asideContent {
+  width: var(--asideWidth);
+  float: left;
+  background-color: var(--asideBackground);
+}
+
+.asideArticle {
+  color: var(--gray);
+  padding: var(--space-xs) var(--space-xl);
+}
+
+.mainIcon i {
+  background-color: var(--colorsrc2);
+  display: inline-block;
+  border-radius: 50%;
+  padding: var(--space-xs);
+  color: var(--asideBackground);
+}
+
+.articleHead {
+  color: var(--colorsrc1);
+}
+
+#themeSwitcher:checked ~ .pageWrapper .mainIcon i {
+  background-color: var(--mainColor);
+  color: var(--asideBackground);
+}
+
+#themeSwitcher:checked ~ .pageWrapper .articleHead {
+  color: var(--mainColor);
+}

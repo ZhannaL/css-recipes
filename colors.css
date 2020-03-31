@@ -1,0 +1,15 @@
+:root {
+  --mainColor:  #2d2d2d;
+  --textColor: #9cdcfe;
+  --backgroundColor: #1e1e1e;
+  --gray: #9cdcfe;
+  --asideBackground: #252526;
+  --asideLight: #37373D;
+  --footerBackground: #222222;
+  --infoblock: #dfdfdf;
+  --colorsrc1: #ce9178;
+  --colorsrc2: #c586c0;
+  --colorsrc3: #4ec9b0;
+  --themeSwitcherText: 'turn on light theme';
+  --interestIcon: var(--mainColor) solid 5px;
+}

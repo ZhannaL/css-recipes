@@ -1,0 +1,56 @@
+.referenceContent {
+  --icon-size: 16px;
+  --icon-color: var(--gray);
+  --block-height: calc(var(--line-height-m) * 3 + var(--space-s) * 2);
+  position: relative;
+}
+
+.referenceContent > svg {
+  position: absolute;
+  top: calc(var(--block-height) / 2);
+  height: calc(100% - var(--block-height));
+}
+
+.reference b {
+  color: var(--colorsrc1);
+}
+
+.reference time {
+  color: var(--colorsrc3);
+}
+
+#themeSwitcher:checked ~ .pageWrapper .reference * {
+  color: var(--textColor);
+}
+
+.referenceContent line {
+  stroke: var(--icon-color);
+  stroke-width: 2px;
+}
+
+.reference > * {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: var(--line-height-m);
+}
+
+.reference {
+  position: relative;
+  padding: var(--space-s) var(--space-l);
+  height: var(--block-height);
+  font-size: var(--font-size-m);
+}
+
+.reference circle {
+  stroke: var(--icon-color);
+  stroke-width: 6;
+  fill: var(--backgroundColor);
+}
+
+.reference svg {
+  height: var(--icon-size);
+  width: var(--icon-size);
+  position: absolute;
+  top: calc(50% - var(--icon-size) / 2);
+  left: 0;
+}

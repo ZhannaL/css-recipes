@@ -1,0 +1,23 @@
+.pageContent {
+  padding: var(--space-xs) var(--space-xl);
+  width: calc(100% - var(--asideWidth));
+}
+
+.wrapper {
+  margin: auto;
+  text-align:center;
+}
+
+.figureBlock {
+  margin: auto;
+  display: inline-block;
+  padding: var(--space-xs) var(--space-xxl);
+  text-align: center;
+  color: var(--textColor);
+}
+
+.exampleImage {
+  width: 200px;
+  height: 150px;
+  border: 3px solid white;
+}

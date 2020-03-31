@@ -1,0 +1,54 @@
+.mainHeader {
+  min-height: var(--headerHeight);
+  padding: var(--space-l);
+  background-color: var(--mainColor);
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+}
+
+.mainHeader > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profileName > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profileName {
+  width: 65%;
+}
+
+.nameInfo {
+  line-height: var(--line-height-m);
+}
+
+.nameInfo .position {
+  color: var(--colorsrc2);
+}
+
+.nameInfo .name {
+  color: var(--colorsrc1);
+}
+
+#themeSwitcher:checked ~ .pageWrapper .nameInfo .position {
+  color: var(--backgroundColor);
+}
+#themeSwitcher:checked ~ .pageWrapper .nameInfo .name {
+  color: var(--backgroundColor);
+}
+
+.mainHeader .profileImage {
+  margin: auto var(--space-xl);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+.mainHeader .profileImage:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,7 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@2/distr/fira_code.css);
+
+:root {
+  --font-size-m: 1rem;
+  --font-size-l: 1.25rem;
+  --line-height-m: 1.25rem;
+}
